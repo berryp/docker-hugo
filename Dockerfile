@@ -8,7 +8,7 @@ RUN wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hu
     mkdir -p hugo && \
     tar -xf "hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" --directory hugo && \
     mv hugo/hugo /usr/local/bin && \
-    rm -rf hugo && \
+    rm -rf hugo* && \
     hugo version
 
 
